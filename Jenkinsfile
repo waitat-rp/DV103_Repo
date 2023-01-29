@@ -49,9 +49,11 @@ pipeline {
             }
         }
 */
-        stage ('Environment Analysis'){
+        stage ('Environment Analysis') {
          
           parallel {
+              
+         stage('Printing All Global Variables') {
             
             steps {
                 sh """
