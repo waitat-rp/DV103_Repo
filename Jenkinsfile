@@ -43,12 +43,12 @@ pipeline {
             }
         }
 
-        stage('Code Build') {
+    /*    stage('Code Build') {
             steps {
                  sh 'mvn install -Dmaven.test.skip=true'
             }
         }
-
+*/
         stage('Printing All Global Variables') {
             steps {
                 sh """
