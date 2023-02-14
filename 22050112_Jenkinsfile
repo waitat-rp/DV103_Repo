@@ -1,10 +1,6 @@
 pipeline {
 
-    agent {
-        node {
-            label 'master'
-        }
-    }
+    agent any
 
        stages {
         
@@ -35,9 +31,9 @@ pipeline {
                 """
             }
         }
-        stage('Execute Shell') {
+        stage('S4_22050112') {
             steps {
-                sh 'echo "Hello Student. Thanks for keeping up!"'
+                sh 'echo "S4_22050112:DAST Security Completed"'
             }
         }
         
@@ -46,14 +42,19 @@ pipeline {
 }
     }
 
-
+stage('S5_22050112') {
+            input {
+              message "Do you want to release the work?"
+              ok "Yes"
+            }
+        }
         
         
         
         
-       stage('Printing All Global Variables') {
+       stage('S6_22050112') {
             steps {
-               sh 'echo "Hello Student. Thanks for keeping up again!"'
+               sh 'echo "Work Released - 22050112"'
             }
         }
 
