@@ -45,20 +45,17 @@ pipeline {
     
 }
     }
-}
+
 
         
         
         
         
-/*        stage('Printing All Global Variables') {
+       stage('Printing All Global Variables') {
             steps {
-                sh """
-                env
-                """
+               sh 'echo "Hello Student. Thanks for keeping up again!"'
             }
         }
 
     }   
-}
-*/
+
