@@ -6,29 +6,13 @@ pipeline {
         }
     }
 
-    tools { 
-      maven 'maven3' 
-    }
-
-    options {
-        buildDiscarder logRotator( 
-                    daysToKeepStr: '15', 
-                    numToKeepStr: '10'
-            )
-    }
-
-    environment {
-        APP_NAME = "STUDENT_APP"
-        APP_ENV  = "DEV"
-    }
-
-    stages {
+       stages {
         
-        stage('Cleanup Workspace') {
+        stage('S1_22050112') {
             steps {
                 cleanWs()
                 sh """
-                echo "Cleaned Up Workspace for ${APP_NAME}"
+                echo "S1_50112:Environment Preparation Completed"
                 """
             }
         }
