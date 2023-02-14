@@ -41,12 +41,8 @@ pipeline {
             }
         }
         
-        stage ('Print ENV variable') {
-            steps {
-                sh "echo $123"
-            }
-        }
-    }
+       
+    
 }
     }
 }
