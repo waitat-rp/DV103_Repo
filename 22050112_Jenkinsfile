@@ -37,8 +37,7 @@ pipeline {
             }
         }
         
-       
-    
+        
 }
     }
 
@@ -46,6 +45,9 @@ stage('S5_22050112') {
             input {
               message "Do you want to release the work?"
               ok "Yes"
+            }
+            steps {
+            echo "S5_Print out"
             }
         }
         
