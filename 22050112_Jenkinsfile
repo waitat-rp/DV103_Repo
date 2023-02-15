@@ -16,8 +16,8 @@ pipeline {
             steps {
             
                sh """
-               chmod +x -R ${env.WORKSPACE}
-               docker rm 22050112_svr
+             
+               ./docker rm 22050112_svr
                 echo "S2_22050112:Web Server Creation Completed"
                 """
             }
