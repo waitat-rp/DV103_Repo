@@ -17,7 +17,7 @@ pipeline {
             
                sh """
              
-               ./docker rm 22050112_svr
+                docker rm 22050112_svr
                 echo "S2_22050112:Web Server Creation Completed"
                 """
             }
