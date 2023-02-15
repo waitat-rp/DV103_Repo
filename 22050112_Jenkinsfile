@@ -14,10 +14,12 @@ pipeline {
 
         stage('S2_22050112') {
             steps {
-            
-               sh '          
-                docker rm 22050112_svr
-               '
+                                 
+                sh ' docker rm 22050112_svr '
+                sh """
+                echo "S1_22050112:Web Server Creation Completed"
+                sh """
+               
             }
         }
 
