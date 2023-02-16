@@ -17,6 +17,7 @@ pipeline {
                                  
                 sh ' docker rm 22050112_svr '
                 sh ' docker run -d -it -p 42000:80 --name=22050112_svr 22050112_webimage bash -c "service apache2 start && sleep 60" '
+                sh ' docker start 22050112_svr '
                 sh """
                 echo "S1_22050112:Web Server Creation Completed"
                 sh """
